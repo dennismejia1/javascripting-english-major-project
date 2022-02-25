@@ -15,8 +15,8 @@ if (userInput === "blue" ) {
     $("#response").html("Are you sure?");
     }
 
-let makeAburrito;
-makeAburrito = function(beansVariable){
+let makeABurrito;
+makeABurrito = function(beansVariable){
     let beansResponse; 
     prepareTortilla();
     addBeans();
@@ -24,7 +24,10 @@ makeAburrito = function(beansVariable){
     beansResponse = "You Ordered " + beansVariable + "beans. Good choice!"; 
     $("#response").html(beansResponse);
     rollUpTortilla();
-}
+}; 
+let blackBeans;
+blackBeans = "black"; 
+makeABurrito(blackBeans);
     
 
 
