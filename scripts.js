@@ -10,11 +10,20 @@ alert("scripts.js has loaded!");
 let userInput; 
 userInput = prompt("What is your favorite color?", "Type Answer Here.");
 if (userInput === "blue" ) {
-    $("#response").html ("Good choice.");
+    $("#response").html("Good choice.");
 )else ( 
-    $("#response").html ("Are you sure?");
+    $("#response").html("Are you sure?");
     }
 
+let makeAburrito;
+makeAburrito = function(beansVariable){
+    let beansResponse; 
+    prepareTortilla();
+    addBeans();
+    addOnionsAndCilantro();
+    beansResponse = "You Ordered " + beansVariable + "beans. Good choice!"; 
+    $("#response").html(beansResponse);
+    
 
 
 let userInput;
