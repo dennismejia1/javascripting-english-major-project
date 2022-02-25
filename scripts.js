@@ -9,7 +9,7 @@ alert("scripts.js has loaded!");
 //--> Don’t you want a burrito?
 let userInput; 
 userinput = prompt("What is your favorite color?", "Type Answer Here.");
-If (userInput === "blue" ) {
+if (userInput === "blue" ) {
     $("#response"), html ("Good choice.");
 )else ( 
     $("response"), html ("Are you sure?");
