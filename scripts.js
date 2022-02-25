@@ -7,6 +7,16 @@ alert("scripts.js has loaded!");
     console.log("Don’t you want a burrito?");
   }
 //--> Don’t you want a burrito?
+let userInput; 
+userinput = prompt("What is your favorite color?", "Type Answer Here.");
+If (userInput === "blue" ) {
+    $("#response"), html ("Good choice.");
+)else ( 
+    $("response"), html ("Are you sure?");
+    }
+
+
+
 let userInput;
 userInput = "samosa";
 if ( userInput === "burrito" ) {
