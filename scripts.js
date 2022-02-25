@@ -23,6 +23,8 @@ makeAburrito = function(beansVariable){
     addOnionsAndCilantro();
     beansResponse = "You Ordered " + beansVariable + "beans. Good choice!"; 
     $("#response").html(beansResponse);
+    rollUpTortilla();
+}
     
 
 
