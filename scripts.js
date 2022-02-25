@@ -16,15 +16,17 @@ if (userInput === "blue" ) {
     }
 
 let makeABurrito;
-makeABurrito = function(beansVariable){
-    let beansResponse; 
-    beansResponse = "You Ordered " + beansVariable + "beans. Good choice!"; 
-    $("#response").html(beansResponse);
-    rollUpTortilla();
+makeABurrito = function(burritoVariable, onionsVariable, cilantroVariable){
+    let burritoResponse; 
+    burritoResponse = "You Ordered " + burritoVariable + "beans." + onionsVariable + "Good choice!"; 
+    $("#response").html(burritoResponse);
 }; 
 let blackBeans;
 blackBeans = "black"; 
 makeABurrito(blackBeans);
+let whiteonion;
+whiteonion = "no onion";
+makeABurrito(whiteonion); 
     
 
 
