@@ -21,6 +21,7 @@ makeABurrito = function(burritoVariable, onionsVariable, cilantroVariable){
     burritoResponse = "You Ordered " + burritoVariable + "beans." + onionsVariable + "Good choice!"; 
     $("#response").html(burritoResponse);
 }; 
+
 let blackBeans;
 blackBeans = "black"; 
 makeABurrito(blackBeans);
@@ -28,6 +29,15 @@ let whiteonion;
 whiteonion = "no onion";
 makeABurrito(whiteonion); 
     
+let myBurritoObject;
+myBurritoObject = {
+  tortilla: "wheat",
+  guacamole: true,
+  beans: "pinto",
+  habaneroSauceSquirts: 3
+  };
+// and let’s access a property
+$("#response").html(myBurritoObject["tortilla"]);
 
 
 let userInput;
