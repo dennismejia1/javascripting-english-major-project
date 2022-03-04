@@ -7,6 +7,8 @@ alert("scripts.js has loaded!");
     console.log("Don’t you want a burrito?");
   }
 //--> Don’t you want a burrito?
+
+
 let userInput; 
 userInput = prompt("What is your favorite color?", "Type Answer Here.");
 if (userInput === "blue" ) {
@@ -15,12 +17,14 @@ if (userInput === "blue" ) {
     $("#response").html("Are you sure?");
     }
 
+
 let makeABurrito;
 makeABurrito = function(burritoVariable, onionsVariable, cilantroVariable){
     let burritoResponse; 
     burritoResponse = "You Ordered " + burritoVariable + "beans." + onionsVariable + "Good choice!"; 
     $("#response").html(burritoResponse);
 }; 
+
 
 let blackBeans;
 blackBeans = "black"; 
@@ -29,6 +33,7 @@ let whiteonion;
 whiteonion = "no onion";
 makeABurrito(whiteonion); 
     
+
 let myBurritoObject;
 myBurritoObject = {
   tortilla: "wheat",
@@ -47,6 +52,32 @@ if ( userInput === "burrito" ) {
 } else {
   $("#response").html("Don’t you want a burrito?");
 };
+
+let myHabaneroSauceSquirts, myBurritoObject;
+// First, define and assign variable for how
+// spicy the burrito is.
+myHabaneroSauceSquirts = 3; 
+// Now assign the burrito object
+myBurritoObject = {
+  tortilla: "wheat",
+  guacamole: true,
+  beans: "pinto",
+  // Make use of the variable above.
+  habaneroSauceSquirts: myHabaneroSauceSquirts, 
+  // Use the variable again in function 
+  spiciness: function(){
+    if (myHabaneroSauceSquirts > 0 ){
+      alert("This is a spicy burrito!");
+    } else {
+      alert("This is a mild burrito.");
+    }
+  }
+}; 
+$("#response").html("Your burrito has " +
+  myBurritoObject.habaneroSauceSquirts +
+  " squirts of habanero.");
+myBurritoObject.spiciness();
+
 
 let arrayOfStrings, arrayofNumbers, arrayMixed;
 arrayOfStrings = ["a", "b", "c"];
