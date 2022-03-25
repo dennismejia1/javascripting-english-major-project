@@ -70,7 +70,11 @@ circle = L.circle(waverlyPlace,          {radius: 100,
                                           opacity: 0.9,
                                           fillOpacity: 0.20}
           ).addTo(firstMap);
-
+circle = L.circle(clarksonStreet,         {radius: 100,
+                                          color: "#d33682",
+                                          fillColor: "#d33682",
+                                          opacity: 0.9,
+                                          fillOpacity: 0.20}
 
 
 
