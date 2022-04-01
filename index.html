@@ -112,7 +112,7 @@ body, html {
       <!-- API ACCESS FOR THE MAP -->
       <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
       <script>
-      L.mapbox.accessToken = 'pk.eyJ1IjoiZGVubmlzbWVqaWExIiwiYSI6ImNsMWdnZGY4cDBta2EzYnBpOHd0cG02a2QifQ.l73Sg9EudgCdZQwSMFYBpw';
+      L.mapbox.accessToken = 'pk.eyJ1IjoibWFwcGxlZ2EiLCJhIjoiY2lqbzk3aGVlMDB0bHRvbTVvNXB1azZxdyJ9.PpTLv2su5er4AqXhF-LK4A';
       var map = L.mapbox.map('map', 'mapbox.streets', {
         container: 'map',
       });
@@ -175,16 +175,6 @@ body, html {
                 ['http://molloymediaarchaeology.org/images/jervis.jpg','<iframe width="280" height="195" src="https://www.youtube.com/embed/O31ciXE9tns" frameborder="0" allowfullscreen></iframe>','Students documented what they saw and experienced.']
               ]
           }
-      }, {    
-          type: 'Feature',
-          "geometry": { "type": "Point", "coordinates": [40.86597072529646, 73.53043296009444]},
-          "properties": {
-              'title': 'Oyster Bay',
-              'marker-color': '#FAD35D',
-              'marker-symbol': 'Triangle',
-              'marker-size': 'Medium',
-              ]
-          }
       }, {
           type: 'Feature',
           "geometry": { "type": "Point", "coordinates": [-6.42425, 53.72220]},
@@ -199,7 +189,8 @@ body, html {
                 ['http://molloymediaarchaeology.org/images/grant_pole4.jpg','The wooden monument is intended to serve as a reminder to visitors that history never goes away -- it is forever present and forever a part of the people it touches.']
               ]
           }
-    }];
+      }];
+
       // Add custom popup html to each marker.
       myLayer.on('layeradd', function(e) {
           var marker = e.layer;
