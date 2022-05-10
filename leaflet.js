@@ -42,13 +42,17 @@ thousandthPolyline = L.polyline(thousandth, {color: "#d33682"}
                       ).addTo(firstMap);
 */
 
-let washingtonSquarePark, washingtonSquareParkMarker, bobstLibrary, bobstLibraryMarker, waverlyPlace, waverlyPlaceMarker;
+let washingtonSquarePark, washingtonSquareParkMarker, bobstLibrary, bobstLibraryMarker, waverlyPlace, waverlyPlaceMarker, unionSquare, unionSquareMarker, flatironBuilding, flatironBuildingMarker;
 washingtonSquarePark = L.latLng(40.730833, -73.9975);
 washingtonSquareParkMarker = L.marker(washingtonSquarePark).bindPopup("This is Washington Square Park.").addTo(firstMap);
 bobstLibrary = L.latLng(40.729444, -73.997222);
 bobstLibraryMarker = L.marker(bobstLibrary).bindPopup("This is Bobst Library.").addTo(firstMap);
 waverlyPlace = L.latLng(40.73449, -74.00358);
 waverlyPlaceMarker = L.marker(waverlyPlace).bindPopup("I added another point, fools.").addTo(firstMap);
+unionSquare = L.latLng(40.736255954922655, -73.99040375421184);
+unionSquareMarker = L.marker(unionSquare).bindPopup("This is Union Square.").addTo(firstMap)
+flatironBuilding = L.latLng(40.74168313064116, -73.98972272069204);
+flatironBuildingMarker = L.marker(flatironBuilding).bindPopup("This is the Flatiron Building.").addTo(firstMap)
 let circle;
 circle = L.circle(washingtonSquarePark, {radius: 100,
                                          color: "#ffccff",
@@ -68,7 +72,18 @@ circle = L.circle(waverlyPlace,          {radius: 100,
                                           opacity: 0.9,
                                           fillOpacity: 0.20}
           ).addTo(firstMap);
-
+circle = L.circle(unionSquare,           {radius: 100,
+                                         color: "#FA763D",
+                                         fillColor: "#ffccff",
+                                         opacity: 0.9,
+                                         fillOpacity: 0.20}
+          ).addTo(firstMap);
+circle = L.circle(flatironBuilding,      {radius: 100,
+                                         color: "#FA763D",
+                                         fillColor: "#ffccff",
+                                         opacity: 0.9,
+                                         fillOpacity: 0.20}
+          ).addTo(firstMap);
 
 
 
